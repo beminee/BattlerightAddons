@@ -73,6 +73,7 @@ namespace Hoyer.Base.Aimbot
         private static void Game_OnMatchStart(EventArgs args)
         {
             _shouldUse = false;
+            
             Main.DelayAction(delegate
             {
                 try
@@ -86,7 +87,7 @@ namespace Hoyer.Base.Aimbot
                 {
                     Console.WriteLine(e);
                 }
-            }, 0.2f);
+            }, 0.5f);
         }
 
         private static void Update(EventArgs args)
